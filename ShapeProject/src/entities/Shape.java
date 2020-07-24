@@ -1,5 +1,15 @@
 package entities;
+import entities.enums.*;
 
-public class Shape {
-
+public abstract class Shape {
+	private Color color;
+	public abstract Double area();
+	
+	public Color getColor() {
+		return color;
+	}
+	
+	public Shape(String c) {
+		color = Color.valueOf(c);
+	}
 }
